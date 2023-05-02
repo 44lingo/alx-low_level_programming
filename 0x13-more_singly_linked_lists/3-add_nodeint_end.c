@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_nodeint_end -adds a node at the end of a linked list
@@ -9,7 +9,7 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	lisint_t *new;
+	listint_t *new;
 	listint_t *temp = *head;
 
 	new = malloc(sizeof(listint_t));
@@ -24,7 +24,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 	while (temp->next)
 		temp = temp->next;
-	temp->next = new;
+	temp->next = (new);
 	
 	return (new);
 }
